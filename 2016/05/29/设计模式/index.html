@@ -1,86 +1,155 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <title>Yc&#39;s blog</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="设计模式总结创建型模式1. 抽象工厂模式名称：抽象工厂意图：提供一个创建一系列相关或相互依赖对象的接口，而无需制定他们具体的类。应用场景：（1）系统独立于它的创建、组合和表示。（2）一个系统要由多个产品系列中的一个来配置的。（3）当强调一系列相关的产品对象的设计以便联合使用。（4）若提供类库，只想提供接口，而不是实现。java例子：123456789101112131415161718192021">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Yc's blog">
-<meta property="og:url" content="http://yoursite.com/2016/05/29/设计模式/index.html">
-<meta property="og:site_name" content="Yc's blog">
-<meta property="og:description" content="设计模式总结创建型模式1. 抽象工厂模式名称：抽象工厂意图：提供一个创建一系列相关或相互依赖对象的接口，而无需制定他们具体的类。应用场景：（1）系统独立于它的创建、组合和表示。（2）一个系统要由多个产品系列中的一个来配置的。（3）当强调一系列相关的产品对象的设计以便联合使用。（4）若提供类库，只想提供接口，而不是实现。java例子：123456789101112131415161718192021">
-<meta property="og:image" content="http://yoursite.com/home/yc/downloads/Picture1.png">
-<meta property="og:image" content="http://yoursite.com/home/yc/downloads/Bridge.JPG">
-<meta property="og:image" content="http://yoursite.com/home/yc/downloads/proxy.jpg">
-<meta property="og:image" content="http://yoursite.com/home/yc/downloads/observer.gif">
-<meta property="og:updated_time" content="2016-05-29T08:53:25.692Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yc's blog">
-<meta name="twitter:description" content="设计模式总结创建型模式1. 抽象工厂模式名称：抽象工厂意图：提供一个创建一系列相关或相互依赖对象的接口，而无需制定他们具体的类。应用场景：（1）系统独立于它的创建、组合和表示。（2）一个系统要由多个产品系列中的一个来配置的。（3）当强调一系列相关的产品对象的设计以便联合使用。（4）若提供类库，只想提供接口，而不是实现。java例子：123456789101112131415161718192021">
-<meta name="twitter:image" content="http://yoursite.com/home/yc/downloads/Picture1.png">
-  
-    <link rel="alternate" href="/atom.xml" title="Yc&#39;s blog" type="application/atom+xml">
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Yc's blog">
+  <script src="http://static.duoshuo.com/embed.js"></script>
   
   
-    <link rel="icon" href="/favicon.png">
   
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
+
   
 
 </head>
-
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Yc&#39;s blog</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-设计模式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/29/设计模式/" class="article-date">
-  <time datetime="2016-05-29T08:53:25.692Z" itemprop="datePublished">2016-05-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="设计模式总结"><a href="#设计模式总结" class="headerlink" title="设计模式总结"></a><center>设计模式总结</center></h1><h2 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a><left>创建型模式</left></h2><h3 id="1-抽象工厂"><a href="#1-抽象工厂" class="headerlink" title="1. 抽象工厂"></a>1. 抽象工厂</h3><p>模式名称：抽象工厂<br><br>意图：提供一个创建一系列相关或相互依赖对象的接口，而无需制定他们具体的类。<br><br>应用场景：<br><br>（1）系统独立于它的创建、组合和表示。<br><br>（2）一个系统要由多个产品系列中的一个来配置的。<br><br>（3）当强调一系列相关的产品对象的设计以便联合使用。<br><br>（4）若提供类库，只想提供接口，而不是实现。<br><br>java例子：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 抽象工厂接口：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">AbstractFactory</span> </span>&#123; </span><br><span class="line">	<span class="function"><span class="keyword">public</span> Shoes <span class="title">GreateShoes</span><span class="params">()</span></span>;  <span class="comment">// 生产鞋子</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Hat <span class="title">GreateHat</span><span class="params">()</span></span>;		 <span class="comment">// 生产帽子</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实例工厂1：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Factory1</span> <span class="keyword">implements</span> <span class="title">AbstractFactory</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Shoes <span class="title">GreateShoes</span><span class="params">()</span> </span>&#123; <span class="comment">//工厂1创建运动鞋</span></span><br><span class="line">		System.out.print(<span class="string">"工厂1"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> SportShoes();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Hat <span class="title">GreateHat</span><span class="params">()</span> </span>&#123;	<span class="comment">//工厂1创建红帽子</span></span><br><span class="line">		System.out.print(<span class="string">"工厂1"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> RedHat();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实例工厂2：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Factory2</span> <span class="keyword">implements</span> <span class="title">AbstractFactory</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Shoes <span class="title">GreateShoes</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.print(<span class="string">"工厂2"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> CasualShoes(); <span class="comment">//工厂2创建休闲鞋</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Hat <span class="title">GreateHat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.print(<span class="string">"工厂2"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> WhiteHat();   <span class="comment">//工厂2创建白帽子</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//帽子类型接口：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Hat</span> </span>&#123; &#125;</span><br><span class="line"><span class="comment">//帽子的实现类红帽子：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedHat</span> <span class="keyword">implements</span> <span class="title">Hat</span> </span>&#123;</span><br><span class="line">	RedHat()&#123;</span><br><span class="line">		System.out.println(<span class="string">"创建红帽子"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//帽子的实现类白帽子：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WhiteHat</span> <span class="keyword">implements</span> <span class="title">Hat</span> </span>&#123;</span><br><span class="line">	WhiteHat()&#123;</span><br><span class="line">		System.out.println(<span class="string">"创建白帽子"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//鞋子类型接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Shoes</span> </span>&#123; &#125;</span><br><span class="line"><span class="comment">//鞋子的实现类运动鞋</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SportShoes</span> <span class="keyword">implements</span> <span class="title">Shoes</span> </span>&#123;</span><br><span class="line">	SportShoes()&#123;</span><br><span class="line">		System.out.println(<span class="string">"创建运动鞋"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//鞋子的实现类休闲鞋</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CasualShoes</span> <span class="keyword">implements</span> <span class="title">Shoes</span> </span>&#123;</span><br><span class="line">	CasualShoes()&#123;</span><br><span class="line">	System.out.println(<span class="string">"创建休闲鞋"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Shoes shoes = <span class="keyword">new</span> Factory1().GreateShoes();</span><br><span class="line">		Shoes shoes1 = <span class="keyword">new</span> Factory2().GreateShoes();</span><br><span class="line">		Hat hat1 = <span class="keyword">new</span> Factory1().GreateHat();</span><br><span class="line">		Hat hat2 = <span class="keyword">new</span> Factory2().GreateHat();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2016/05/29/设计模式/"></a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2016/05/29/设计模式/"></a>
+                
+                
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Yc&#39;s blog</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#"></a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D"></h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2016-05-29T08:53:25.692Z"
+                              itemprop="datePublished">2016-05-29</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <h1 id="设计模式总结"><a href="#设计模式总结" class="headerlink" title="设计模式总结"></a><center>设计模式总结</center></h1><h2 id="创建型模式"><a href="#创建型模式" class="headerlink" title="创建型模式"></a><left>创建型模式</left></h2><h3 id="1-抽象工厂"><a href="#1-抽象工厂" class="headerlink" title="1. 抽象工厂"></a>1. 抽象工厂</h3><p>模式名称：抽象工厂<br><br>意图：提供一个创建一系列相关或相互依赖对象的接口，而无需制定他们具体的类。<br><br>应用场景：<br><br>（1）系统独立于它的创建、组合和表示。<br><br>（2）一个系统要由多个产品系列中的一个来配置的。<br><br>（3）当强调一系列相关的产品对象的设计以便联合使用。<br><br>（4）若提供类库，只想提供接口，而不是实现。<br><br>java例子：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 抽象工厂接口：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">AbstractFactory</span> </span>&#123; </span><br><span class="line">	<span class="function"><span class="keyword">public</span> Shoes <span class="title">GreateShoes</span><span class="params">()</span></span>;  <span class="comment">// 生产鞋子</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Hat <span class="title">GreateHat</span><span class="params">()</span></span>;		 <span class="comment">// 生产帽子</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实例工厂1：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Factory1</span> <span class="keyword">implements</span> <span class="title">AbstractFactory</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Shoes <span class="title">GreateShoes</span><span class="params">()</span> </span>&#123; <span class="comment">//工厂1创建运动鞋</span></span><br><span class="line">		System.out.print(<span class="string">"工厂1"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> SportShoes();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Hat <span class="title">GreateHat</span><span class="params">()</span> </span>&#123;	<span class="comment">//工厂1创建红帽子</span></span><br><span class="line">		System.out.print(<span class="string">"工厂1"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> RedHat();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实例工厂2：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Factory2</span> <span class="keyword">implements</span> <span class="title">AbstractFactory</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Shoes <span class="title">GreateShoes</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.print(<span class="string">"工厂2"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> CasualShoes(); <span class="comment">//工厂2创建休闲鞋</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Hat <span class="title">GreateHat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.print(<span class="string">"工厂2"</span>);</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">new</span> WhiteHat();   <span class="comment">//工厂2创建白帽子</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//帽子类型接口：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Hat</span> </span>&#123; &#125;</span><br><span class="line"><span class="comment">//帽子的实现类红帽子：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedHat</span> <span class="keyword">implements</span> <span class="title">Hat</span> </span>&#123;</span><br><span class="line">	RedHat()&#123;</span><br><span class="line">		System.out.println(<span class="string">"创建红帽子"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//帽子的实现类白帽子：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WhiteHat</span> <span class="keyword">implements</span> <span class="title">Hat</span> </span>&#123;</span><br><span class="line">	WhiteHat()&#123;</span><br><span class="line">		System.out.println(<span class="string">"创建白帽子"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//鞋子类型接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Shoes</span> </span>&#123; &#125;</span><br><span class="line"><span class="comment">//鞋子的实现类运动鞋</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SportShoes</span> <span class="keyword">implements</span> <span class="title">Shoes</span> </span>&#123;</span><br><span class="line">	SportShoes()&#123;</span><br><span class="line">		System.out.println(<span class="string">"创建运动鞋"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//鞋子的实现类休闲鞋</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CasualShoes</span> <span class="keyword">implements</span> <span class="title">Shoes</span> </span>&#123;</span><br><span class="line">	CasualShoes()&#123;</span><br><span class="line">	System.out.println(<span class="string">"创建休闲鞋"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Shoes shoes = <span class="keyword">new</span> Factory1().GreateShoes();</span><br><span class="line">		Shoes shoes1 = <span class="keyword">new</span> Factory2().GreateShoes();</span><br><span class="line">		Hat hat1 = <span class="keyword">new</span> Factory1().GreateHat();</span><br><span class="line">		Hat hat2 = <span class="keyword">new</span> Factory2().GreateHat();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="2-生成器"><a href="#2-生成器" class="headerlink" title="2. 生成器"></a>2. 生成器</h3><p>模式名称：生成器模式        &nbsp;&nbsp; 别名：建造模式<br><br>模式意图：将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。<br><br>应用场景：<br><br>（1）当创建复杂对象的算法应该独立于与该对象的组成部分以及他们的装配方式时。<br><br>（2）当构造过程必须被构造的对象有不同的表示时。<br><br>java例子:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//基类:</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Computer</span> </span>&#123;  </span><br><span class="line">	<span class="keyword">private</span> String Screen; <span class="comment">//显示屏幕</span></span><br><span class="line">	<span class="keyword">private</span> String Mouse;  <span class="comment">//鼠标</span></span><br><span class="line">	<span class="keyword">private</span> String KeyBoard; <span class="comment">//键盘</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setScreen</span><span class="params">(String screen)</span> </span>&#123;</span><br><span class="line">		Screen = screen;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMouse</span><span class="params">(String mouse)</span> </span>&#123;</span><br><span class="line">		Mouse = mouse;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setKeyBoard</span><span class="params">(String keyBoard)</span> </span>&#123;</span><br><span class="line">		KeyBoard = keyBoard;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="string">"Computer [Screen="</span> + Screen + <span class="string">", Mouse="</span> + Mouse+ <span class="string">", KeyBoard="</span> + KeyBoard + <span class="string">"]"</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//创建电脑的类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">ComputerBuilder</span> </span>&#123;</span><br><span class="line">	<span class="keyword">protected</span> Computer computer;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Computer <span class="title">getComputer</span><span class="params">()</span></span>&#123; <span class="keyword">return</span> computer; &#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">createNewComputer</span><span class="params">()</span></span>&#123; computer = <span class="keyword">new</span> Computer();&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">buildScreen</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">buildMouse</span><span class="params">()</span></span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">void</span> <span class="title">buildKeyBoard</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实现类 联想电脑</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">LenovoComputer</span> <span class="keyword">extends</span> <span class="title">ComputerBuilder</span> </span>&#123;	</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buildScreen</span><span class="params">()</span> </span>&#123;computer.setScreen(<span class="string">"lenovo screen"</span>);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buildMouse</span><span class="params">()</span> </span>&#123;computer.setMouse(<span class="string">"lenovo mouse"</span>);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buildKeyBoard</span><span class="params">()</span> </span>&#123;computer.setKeyBoard(<span class="string">"lenovo keyBoard"</span>);&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实现类 戴尔电脑</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">DellComputer</span> <span class="keyword">extends</span> <span class="title">ComputerBuilder</span></span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buildScreen</span><span class="params">()</span> </span>&#123;computer.setScreen(<span class="string">"dell screen"</span>);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buildMouse</span><span class="params">()</span> </span>&#123;computer.setMouse(<span class="string">"dell mouse"</span>);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">buildKeyBoard</span><span class="params">()</span> </span>&#123;computer.setKeyBoard(<span class="string">"dell keyBoard"</span>);&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//售货员类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Assisstant</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> ComputerBuilder cb; <span class="comment">//传入一个电脑的厂家</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> Computer <span class="title">getComputer</span><span class="params">()</span></span>&#123;<span class="keyword">return</span> cb.getComputer();&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setComputerBuilder</span><span class="params">(ComputerBuilder cb)</span></span>&#123;<span class="keyword">this</span>.cb = cb;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">createNewComputer</span><span class="params">()</span></span>&#123;</span><br><span class="line">		cb.createNewComputer(); <span class="comment">//创建新的电脑</span></span><br><span class="line">		cb.buildKeyBoard();		<span class="comment">//创建键盘</span></span><br><span class="line">		cb.buildMouse();		<span class="comment">//创建鼠标</span></span><br><span class="line">		cb.buildScreen();		<span class="comment">//创建显示器</span></span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Assisstant as = <span class="keyword">new</span> Assisstant();</span><br><span class="line">		ComputerBuilder lenovo = <span class="keyword">new</span> LenovoComputer();</span><br><span class="line">		ComputerBuilder deel = <span class="keyword">new</span> DellComputer();</span><br><span class="line">		as.setComputerBuilder(lenovo);</span><br><span class="line">		as.createNewComputer();</span><br><span class="line">		Computer computer = as.getComputer();</span><br><span class="line">		System.out.println(computer);</span><br><span class="line">		as.setComputerBuilder(deel);</span><br><span class="line">		as.createNewComputer();</span><br><span class="line">		Computer computer1 = as.getComputer();</span><br><span class="line">		System.out.println(computer1);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-原型"><a href="#3-原型" class="headerlink" title="3. 原型"></a>3. 原型</h3><p>模式名称 ： 原型模式<br><br>意图：用原型实例制定创建对象的种类，并且通过拷贝这些原型创建新的对象。<br><br>应用场景：</p><p><br>（1）当要实例化的类是在运行时刻制定时，例如，通过动态装载。<br><br>（2）为了避免创建一个与产品层次平行的工厂类层次时。<br><br>（3）当一个类的实例只能有几个不同状态组合中的一种时。<br><br>UML类图:<br><br><img src="/home/yc/downloads/Picture1.png" alt=""> <br><br>java例子:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//原型接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Prototype</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">cloneMe</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//通过克隆得到对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cublic</span> <span class="keyword">implements</span> <span class="title">Prototype</span>, <span class="title">Cloneable</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">cloneMe</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> (Cublic)clone();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> <span class="string">"Cublic []"</span>;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//通过序列化得到对象</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Goat</span> <span class="keyword">implements</span> <span class="title">Prototype</span>, <span class="title">Serializable</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;<span class="keyword">return</span> <span class="string">"Goat []"</span>;&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">cloneMe</span><span class="params">()</span> <span class="keyword">throws</span> CloneNotSupportedException </span>&#123;</span><br><span class="line">		Object obj = <span class="keyword">null</span>;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			ByteArrayOutputStream outOne = <span class="keyword">new</span> ByteArrayOutputStream();</span><br><span class="line">			ObjectOutputStream  outTwo = <span class="keyword">new</span> ObjectOutputStream(outOne);</span><br><span class="line">			outTwo.writeObject(<span class="keyword">this</span>);</span><br><span class="line">			ByteArrayInputStream inOne = <span class="keyword">new</span> ByteArrayInputStream(outOne.toByteArray());</span><br><span class="line">			ObjectInputStream inTwo = <span class="keyword">new</span> ObjectInputStream(inOne);</span><br><span class="line">			obj = inTwo.readObject();</span><br><span class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">			e.printStackTrace();</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> obj;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> CloneNotSupportedException </span>&#123;</span><br><span class="line">		Goat goat = <span class="keyword">new</span> Goat();</span><br><span class="line">		System.out.println(<span class="string">"通过对象流得到："</span>+goat.cloneMe());</span><br><span class="line">		Cublic cb = <span class="keyword">new</span> Cublic();</span><br><span class="line">		System.out.println(<span class="string">"通过拷贝得到："</span>+cb.cloneMe());</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="结构型模式"><a href="#结构型模式" class="headerlink" title="结构型模式"></a>结构型模式</h2><h3 id="1-适配器模式"><a href="#1-适配器模式" class="headerlink" title="1. 适配器模式"></a>1. 适配器模式</h3><p>模式名称：适配器模式 &nbsp;&nbsp;别名：包装器 <br><br>意图：将一个类的接口转换成客户希望的另一个接口。<br><br>应用场景：<br><br>（1）想要使用某个已经存在的类，而它的接口不符合需求。<br><br>（2）想要创建一个可复用的类，该类可以和其他部相关的类或不可预见的类协同工作。<br><br>（3）想要使用一些已经存在的子类，但是不可能对每一个都进行子类化以匹配他们的接口。对象的适配器可以适配它父类的接口。<br><br>java例子:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//三孔插座接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ThreeSocketInf</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">powerWithThreeSocket</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//三孔插座实现</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ThreeSocket</span> <span class="keyword">implements</span> <span class="title">ThreeSocketInf</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">powerWithThreeSocket</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.print(<span class="string">"使用三孔插座充电"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//两孔插座接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">TwoSocketInf</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">powerWithTwoSocket</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//两孔插座实现</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TwoSocket</span> <span class="keyword">implements</span> <span class="title">TwoSocketInf</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">powerWithTwoSocket</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"使用两孔插座充电"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//适配器</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SocketAdapter</span> <span class="keyword">implements</span> <span class="title">TwoSocketInf</span> </span>&#123;</span><br><span class="line">	<span class="keyword">private</span> ThreeSocketInf ts;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">SocketAdapter</span><span class="params">(ThreeSocketInf ts)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.ts = ts;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">powerWithTwoSocket</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		ts.powerWithThreeSocket();</span><br><span class="line">		System.out.print(<span class="string">"---&gt; 适配为两口"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		ThreeSocketInf three = <span class="keyword">new</span> ThreeSocket();</span><br><span class="line">		SocketAdapter sa = <span class="keyword">new</span> SocketAdapter(three);</span><br><span class="line">		sa.powerWithTwoSocket();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -90,87 +159,69 @@
 <h3 id="2-观察者模式"><a href="#2-观察者模式" class="headerlink" title="2.观察者模式"></a>2.观察者模式</h3><p>模式名称：观察者模式  &nbsp;&nbsp;别名：依赖、发布、订阅<br><br>模式意图：定义对象间的一种一对多的依赖关系，当一个对象的状态发生变化时，所有依赖它的对象得到通知并被自动更新。<br><br>应用场景:<br><br>（1）当一个抽象模型有两个方面,其中一个方面依赖于另一方面。<br><br>（2）当对一个对象的改变需要同时改变其它对象,而不知道具体有多少对象有待改变。<br><br>（3）当一个对象必须通知其它对象，而它又不能假定其它对象是谁。<br><br>UML类图：<br><br><img src="/home/yc/downloads/observer.gif" alt=""> <br><br>java例子:<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//抽象观察者</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Watcher</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(String str)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//生成具体观察者</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConcreteWatcher</span> <span class="keyword">implements</span> <span class="title">Watcher</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">		System.out.println(str);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//管理观察者的接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Watched</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addWatcher</span><span class="params">(Watcher watcher)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">removeWatcher</span><span class="params">(Watcher watcher)</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">notifyWatchers</span><span class="params">(String str)</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//实现管理观察者</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConcreteWatched</span> <span class="keyword">implements</span> <span class="title">Watched</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> List&lt;Watcher&gt; list = <span class="keyword">new</span> ArrayList&lt;Watcher&gt;();</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">addWatcher</span><span class="params">(Watcher watcher)</span> </span>&#123;list.add(watcher);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">removeWatcher</span><span class="params">(Watcher watcher)</span> </span>&#123;list.remove(watcher);&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">notifyWatchers</span><span class="params">(String str)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">for</span>(Watcher l : list) l.update(str);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		Watched watched = <span class="keyword">new</span> ConcreteWatched();</span><br><span class="line">		Watcher watcher1 = <span class="keyword">new</span> ConcreteWatcher();</span><br><span class="line">		Watcher watcher2 = <span class="keyword">new</span> ConcreteWatcher();</span><br><span class="line">		Watcher watcher3 = <span class="keyword">new</span> ConcreteWatcher();</span><br><span class="line">		watched.addWatcher(watcher1);</span><br><span class="line">		watched.addWatcher(watcher2);</span><br><span class="line">		watched.addWatcher(watcher3);</span><br><span class="line">		watched.notifyWatchers(<span class="string">"哈哈"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h3 id="3-迭代器模式"><a href="#3-迭代器模式" class="headerlink" title="3.迭代器模式"></a>3.迭代器模式</h3><p>模式名称：迭代器模式  &nbsp;&nbsp;别名：游标<br><br>模式意图：提供一种方法顺序访问一个聚合对象中的各个元素，而不需要暴露改对象内部表示。<br><br>应用场景:<br><br>（1）访问一个聚合对象的内容而无需暴露它的内部表示。<br><br>（2）支持对聚合对象的多种遍历。<br><br>（3）为遍历不同的聚合结构提供统一的接口。<br><br>java 例子：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//迭代器接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Iterator</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">first</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">next</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">currentItem</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isDone</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//迭代器实现类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConcreteIterator</span> <span class="keyword">implements</span> <span class="title">Iterator</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> currentIndex = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">private</span> Vector vector = <span class="keyword">null</span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ConcreteIterator</span><span class="params">(<span class="keyword">final</span> Vector vector)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.vector = vector;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">applyAsLong</span><span class="params">(<span class="keyword">int</span> value)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">first</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		  currentIndex = <span class="number">0</span>;</span><br><span class="line">	     <span class="keyword">return</span> vector.get(currentIndex);	</span><br><span class="line">	 &#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">next</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		 currentIndex++;</span><br><span class="line">	     <span class="keyword">return</span> vector.get(currentIndex);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Object <span class="title">currentItem</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> vector.get(currentIndex);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isDone</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	    <span class="keyword">if</span> (currentIndex &gt;= <span class="keyword">this</span>.vector.size() - <span class="number">1</span>)		<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">	    <span class="keyword">else</span> <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//组件接口</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Aggregat</span> </span>&#123;</span><br><span class="line">	  <span class="function"><span class="keyword">public</span> Iterator <span class="title">createIterator</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//组件实现类</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ConcreteAggregat</span> <span class="keyword">implements</span> <span class="title">Aggregat</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Vector vector = <span class="keyword">null</span>;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Iterator <span class="title">createIterator</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ConcreteIterator(vector);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">ConcreteAggregat</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		vector = <span class="keyword">new</span> Vector();</span><br><span class="line">		vector.add(<span class="string">"vector1"</span>);</span><br><span class="line">		vector.add(<span class="string">"vector2"</span>);</span><br><span class="line">		vector.add(<span class="string">"vector3"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> Vector <span class="title">getVector</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> vector;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setVector</span><span class="params">(Vector vector)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.vector = vector;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//客户端</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		 <span class="keyword">final</span> Aggregat agg = <span class="keyword">new</span> ConcreteAggregat();</span><br><span class="line">	        <span class="keyword">final</span> Iterator iterator = agg.createIterator();</span><br><span class="line">	        System.out.println(iterator.first());</span><br><span class="line">	        <span class="keyword">while</span> (!iterator.isDone()) &#123;</span><br><span class="line">	            System.out.println(iterator.next());</span><br><span class="line">	        &#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-      
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Yc's blog 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/05/29/设计模式/" data-id="cioscp14h00001c767oa3n4ie" class="article-share-link">Delen</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/05/29/设计模式/">(no title)</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 Yc<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
     </div>
-    <nav id="mobile-nav">
+</div>
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 
 
-<script src="/js/script.js"></script>
 
-  </div>
+
+
+
+
 </body>
 </html>
